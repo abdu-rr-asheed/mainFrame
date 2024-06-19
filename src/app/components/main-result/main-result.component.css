@@ -1,0 +1,35 @@
+.result-title .mat-icon {
+    width: 36px;
+    height: 34px;
+    font-size: 40px;
+}
+
+.main-result-tab button {
+    border-color: transparent !important;
+    background-color: #80808047 !important;
+    color: black;
+    border-radius: 5px !important;
+}
+
+.main-result-tab {
+    gap: 10px;
+    border: none;
+}
+
+.main-result-tab li {
+    border: none;
+}
+
+.main-result-tab .nav-link.active {
+    border-color: black !important;
+}
+.result-content-head {
+    background: gainsboro;
+    padding: 10px;
+    border-radius: 10px;
+}
+.result-content-details {
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+}

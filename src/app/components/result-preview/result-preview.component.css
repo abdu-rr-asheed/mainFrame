@@ -1,0 +1,12 @@
+.emty mat-icon {
+  width: 300px;
+  height: 300px;
+  font-size: 300px;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  color: #d0d0d0;
+}
+.emty div {
+  color: #d0d0d0;
+}

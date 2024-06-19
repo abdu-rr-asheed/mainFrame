@@ -1,0 +1,59 @@
+<div class="filter-section">
+  <div
+    class="search-container d-flex justify-content-start align-items-center gap-2 flex-nowrap"
+  >
+    <input type="text" placeholder="Search" />
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Example home icon"
+      fontIcon="search"
+    ></mat-icon>
+  </div>
+  <button class="filter-button no-accordion" notification="0">
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Example home icon"
+      fontIcon="sports_esports"
+    ></mat-icon>
+    <span class="ps-2">eSports</span>
+  </button>
+  <button class="filter-button no-accordion" notification="20">
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Example home icon"
+      fontIcon="sports_esports"
+    ></mat-icon>
+    <span class="ps-2">eSports</span>
+  </button>
+  <div ngbAccordion>
+    @for(item of [1,2,3,4,5,6,7,8,9]; track $index) {
+    <div ngbAccordionItem>
+      <h2 ngbAccordionHeader>
+        <button ngbAccordionButton notification="12" class="filter-button">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="sports_esports"
+          ></mat-icon>
+          <span class="ps-2">eSports</span>
+        </button>
+      </h2>
+      <div ngbAccordionCollapse>
+        <div ngbAccordionBody>
+          <ng-template>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 1</li>
+              <li>Item 1</li>
+              <li>Item 1</li>
+              <li>Item 1</li>
+              <li>Item 1</li>
+              <li>Item 1</li>
+            </ul>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,459 @@
+<div class="main-result">
+  <h2 class="result-title">
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Example home icon"
+      fontIcon="sports_esports"
+    ></mat-icon>
+    <span class="ps-2">eSports</span>
+  </h2>
+
+  <ul
+    ngbNav
+    #nav="ngbNav"
+    [(activeId)]="active"
+    class="nav-tabs main-result-tab"
+  >
+    @for (item of match; track $index) {
+    <li [ngbNavItem]="$index + 1">
+      <button ngbNavLink>{{ item.name }} ({{ item.count }})</button>
+      <ng-template ngbNavContent>
+        <div class="result-content">
+          <div class="result-content-head">
+            <div class="row">
+              <div class="col-1">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="sports_esports"
+                ></mat-icon>
+              </div>
+              <div class="col-4">King Pro League Summer 2024</div>
+              <div class="col-2">Winner</div>
+              <div class="col-2">Handicap</div>
+              <div class="col-2">Number of maps</div>
+              <div class="col-1">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="sports_esports"
+                ></mat-icon>
+              </div>
+            </div>
+          </div>
+          <div class="result-content-details mt-2">
+            <div class="row align-items-center">
+              <div class="col-1">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="sports_esports"
+                ></mat-icon>
+              </div>
+              <div class="col-4">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="live">Live</div>
+                    <div class="time">5:30</div>
+                    <div class="day">Today</div>
+                  </div>
+                  <div class="col-9">
+                    <div class="gaming-heading d-flex align-items-center gap-2">
+                      <img
+                        src="../../../assets/images/icons/medal.png"
+                        alt="img"
+                        width="24"
+                      />
+                      <h5>Telent gaming</h5>
+                    </div>
+                    <div class="gaming-heading d-flex align-items-center gap-2">
+                      <img
+                        src="../../../assets/images/icons/medal.png"
+                        alt="img"
+                        width="24"
+                      />
+                      <h5>Telent gaming</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="lock"
+                ></mat-icon>
+              </div>
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="btn">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">
+                      <mat-icon
+                        aria-hidden="false"
+                        aria-label="Example home icon"
+                        fontIcon="sports_esports"
+                      ></mat-icon>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">
+                      <mat-icon
+                        aria-hidden="false"
+                        aria-label="Example home icon"
+                        fontIcon="sports_esports"
+                      ></mat-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="btn border">-2.5</div>
+                  </div>
+                  <div class="col-6 border">
+                    <div class="btn">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn bg-danger text-danger-emphasis">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">-2.5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="sports_esports"
+                ></mat-icon>
+              </div>
+            </div>
+          </div>
+          <div class="result-content-details mt-2">
+            <div class="row align-items-center">
+              <div class="col-1">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="sports_esports"
+                ></mat-icon>
+              </div>
+              <div class="col-4">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="live">Live</div>
+                    <div class="time">5:30</div>
+                    <div class="day">Today</div>
+                  </div>
+                  <div class="col-9">
+                    <div class="gaming-heading d-flex align-items-center gap-2">
+                      <img
+                        src="../../../assets/images/icons/medal.png"
+                        alt="img"
+                        width="24"
+                      />
+                      <h5>Telent gaming</h5>
+                    </div>
+                    <div class="gaming-heading d-flex align-items-center gap-2">
+                      <img
+                        src="../../../assets/images/icons/medal.png"
+                        alt="img"
+                        width="24"
+                      />
+                      <h5>Telent gaming</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="lock"
+                ></mat-icon>
+              </div>
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="btn">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">
+                      <mat-icon
+                        aria-hidden="false"
+                        aria-label="Example home icon"
+                        fontIcon="sports_esports"
+                      ></mat-icon>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">
+                      <mat-icon
+                        aria-hidden="false"
+                        aria-label="Example home icon"
+                        fontIcon="sports_esports"
+                      ></mat-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="btn border">-2.5</div>
+                  </div>
+                  <div class="col-6 border">
+                    <div class="btn">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn bg-danger text-danger-emphasis">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">-2.5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="sports_esports"
+                ></mat-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="result-content">
+          <div class="result-content-head mt-2">
+            <div class="row">
+              <div class="col-1">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="sports_esports"
+                ></mat-icon>
+              </div>
+              <div class="col-4">King Pro League Summer 2024</div>
+              <div class="col-2">Winner</div>
+              <div class="col-2">Handicap</div>
+              <div class="col-2">Number of maps</div>
+              <div class="col-1">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="sports_esports"
+                ></mat-icon>
+              </div>
+            </div>
+          </div>
+          <div class="result-content-details mt-2">
+            <div class="row align-items-center">
+              <div class="col-1">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="sports_esports"
+                ></mat-icon>
+              </div>
+              <div class="col-4">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="live">Live</div>
+                    <div class="time">5:30</div>
+                    <div class="day">Today</div>
+                  </div>
+                  <div class="col-9">
+                    <div class="gaming-heading d-flex align-items-center gap-2">
+                      <img
+                        src="../../../assets/images/icons/medal.png"
+                        alt="img"
+                        width="24"
+                      />
+                      <h5>Telent gaming</h5>
+                    </div>
+                    <div class="gaming-heading d-flex align-items-center gap-2">
+                      <img
+                        src="../../../assets/images/icons/medal.png"
+                        alt="img"
+                        width="24"
+                      />
+                      <h5>Telent gaming</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="lock"
+                ></mat-icon>
+              </div>
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="btn">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn text-bg-success">
+                      <mat-icon
+                        aria-hidden="false"
+                        aria-label="Example home icon"
+                        fontIcon="sports_esports"
+                      ></mat-icon>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">
+                      <mat-icon
+                        aria-hidden="false"
+                        aria-label="Example home icon"
+                        fontIcon="sports_esports"
+                      ></mat-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="btn border">-2.5</div>
+                  </div>
+                  <div class="col-6 border">
+                    <div class="btn">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn bg-danger text-danger-emphasis">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">-2.5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="sports_esports"
+                ></mat-icon>
+              </div>
+            </div>
+          </div>
+          <div class="result-content-details mt-2">
+            <div class="row align-items-center">
+              <div class="col-1">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="sports_esports"
+                ></mat-icon>
+              </div>
+              <div class="col-4">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="live">Live</div>
+                    <div class="time">5:30</div>
+                    <div class="day">Today</div>
+                  </div>
+                  <div class="col-9">
+                    <div class="gaming-heading d-flex align-items-center gap-2">
+                      <img
+                        src="../../../assets/images/icons/medal.png"
+                        alt="img"
+                        width="24"
+                      />
+                      <h5>Telent gaming</h5>
+                    </div>
+                    <div class="gaming-heading d-flex align-items-center gap-2">
+                      <img
+                        src="../../../assets/images/icons/medal.png"
+                        alt="img"
+                        width="24"
+                      />
+                      <h5>Telent gaming</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="lock"
+                ></mat-icon>
+              </div>
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="btn">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">
+                      <mat-icon
+                        aria-hidden="false"
+                        aria-label="Example home icon"
+                        fontIcon="sports_esports"
+                      ></mat-icon>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">
+                      <mat-icon
+                        aria-hidden="false"
+                        aria-label="Example home icon"
+                        fontIcon="sports_esports"
+                      ></mat-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="btn border">-2.5</div>
+                  </div>
+                  <div class="col-6 border">
+                    <div class="btn">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn bg-danger text-danger-emphasis">-2.5</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="btn">-2.5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="sports_esports"
+                ></mat-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </li>
+    }
+  </ul>
+
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>
